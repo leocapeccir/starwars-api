@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+@font-face {
+    font-family: Starjedi;
+    src: url("./font/star_jedi/starjout/Starjout.ttf");
+    
+}
+
+header {
+    color: yellow;
+    text-align: center;
+   font-size: 4rem;
+
+}
+
+body{
+    font-family: Starjedi;
+    background-color:black;
+     text-align: center;
+     min-height: 100vh;
+}
+
+main{
+    display: inline-block;
+    margin-top: 2%;
+    padding: 6%;
+    position: relative;
+
+}
+
+.porta {
+    width: 100%;
+    border-radius: 30px;
+    
+    
+    
+}
+
+.personagem{
+    position: absolute;
+    width: 240px;
+    left: 19%;
+    bottom: 20%;
+    border-radius: 10px;
+}
+
+.personagem__data{
+    position: absolute;
+    font-weight: 600;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    top: 10%;
+    right: 53%;
+   
+
+}
+.personagem__data:hover{
+    color: yellow ;
+    
+
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    font-weight: 600;
+    color: white;
+    border-radius: 5px;
+    color: white;
+    top: 30%;
+    left: 54%;
+    color: yellow;
+    background:none;
+    box-shadow: -2px 3px 0 yellow, -4px 6px 0 rgb(38, 38, 38) ;
+    
+}
+
+
+.buttons{
+    position: absolute;
+    bottom: 83.5% ;
+    left:56% ;
+    width: 65%;
+    display: flex;
+    gap: 20px;
+   
+}
+
+.button{
+    width: 18%;
+   padding: 1%;
+   border: 2px solid #000;
+   font-family: Starjedi;
+   border-radius: 8px;
+   font-size: 1rem;
+   color: rgb(0, 0, 0);
+   background-color: yellow;
+   box-shadow: -2px 3px 0 yellow, -4px 6px 0 rgb(38, 38, 38) ;
+   cursor: pointer;
+  
+ 
+}
+
+.button:active{
+    box-shadow: inset -4px 6px 0 rgb(38, 38, 38) ; 
+    font-size: 0.9rem;
+}
+
+        
+
+
+
+
+@media  (max-width: 795px) {
+
+    .personagem{
+        width: 11.6rem;
+        
+    }
+}
+
+
+@media  (max-width: 647px) {
+
+    .personagem{
+        width: 10.5rem;
+        
+    }
+}
+
+@media  (max-width: 575px) {
+
+    .personagem__data{
+        font-size: 1.6rem;
+        
+       
+    
+    }
+
+    header {
+        color: yellow;
+        text-align: center;
+       font-size: 2rem;
+    
+    }
+
+    .personagem{
+        
+        width: 7.8rem;
+        
+        
+    }
+}
+
+@media  (max-width: 459px) {
+
+    .personagem{
+        font-size: 1rem;
+        width: 7rem;
+      
+        
+    }
+}
